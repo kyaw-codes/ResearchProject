@@ -12,6 +12,9 @@
 		026AEBE228412B4500262773 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 026AEBE128412B4500262773 /* Preview Assets.xcassets */; };
 		026AEBED28412B8000262773 /* VisualLayoutGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026AEBEC28412B8000262773 /* VisualLayoutGuideView.swift */; };
 		026AEBF028412E9300262773 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026AEBEF28412E9300262773 /* HapticManager.swift */; };
+		C8582F7628429D3D0067D6CC /* TabContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8582F7528429D3D0067D6CC /* TabContainerView.swift */; };
+		C8582F7828429D4B0067D6CC /* StaggeredGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8582F7728429D4B0067D6CC /* StaggeredGridView.swift */; };
+		C8582F7A28429D730067D6CC /* TabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8582F7928429D730067D6CC /* TabItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		026AEBE128412B4500262773 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		026AEBEC28412B8000262773 /* VisualLayoutGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualLayoutGuideView.swift; sourceTree = "<group>"; };
 		026AEBEF28412E9300262773 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		C8582F7528429D3D0067D6CC /* TabContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabContainerView.swift; sourceTree = "<group>"; };
+		C8582F7728429D4B0067D6CC /* StaggeredGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaggeredGridView.swift; sourceTree = "<group>"; };
+		C8582F7928429D730067D6CC /* TabItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +81,10 @@
 		026AEBE828412B5E00262773 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C8582F7028429D0F0067D6CC /* StaggeredGrid */,
 				026AEBEB28412B7000262773 /* VisualLayoutGuide */,
+				C8582F7528429D3D0067D6CC /* TabContainerView.swift */,
+				C8582F7928429D730067D6CC /* TabItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -108,6 +117,14 @@
 				026AEBEF28412E9300262773 /* HapticManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		C8582F7028429D0F0067D6CC /* StaggeredGrid */ = {
+			isa = PBXGroup;
+			children = (
+				C8582F7728429D4B0067D6CC /* StaggeredGridView.swift */,
+			);
+			path = StaggeredGrid;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,8 +198,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				026AEBED28412B8000262773 /* VisualLayoutGuideView.swift in Sources */,
+				C8582F7828429D4B0067D6CC /* StaggeredGridView.swift in Sources */,
 				026AEBF028412E9300262773 /* HapticManager.swift in Sources */,
+				C8582F7A28429D730067D6CC /* TabItemView.swift in Sources */,
 				026AEBDB28412B4300262773 /* ResearchProjectApp.swift in Sources */,
+				C8582F7628429D3D0067D6CC /* TabContainerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

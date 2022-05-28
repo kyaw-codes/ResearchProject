@@ -11,7 +11,7 @@ import SwiftUI
 struct ResearchProjectApp: App {
     var body: some Scene {
         WindowGroup {
-            VisualLayoutGuideView()
+            TabContainerView()
         }
     }
 }
