@@ -22,7 +22,7 @@ struct VisualLayoutGuideView: View {
     
     var body: some View {
         ZStack {
-            if showVerticalLayoutGuide {
+            if showHorizontalLayoutGuide {
                 horizontalLayoutGuide
             }
             
@@ -62,17 +62,33 @@ struct VisualLayoutGuideView: View {
             .onChanged { angle in
                 rotationDegree = angle.degrees
             }
+            .onEnded { _ in
+                hideGuidelines()
+            }
     }
     
     var dragGesture: some Gesture {
         DragGesture()
             .onChanged { value in
+                let width = previousOffset.width + currentOffset.width
+                let height = previousOffset.height + currentOffset.height
+                
+                withAnimation {
+                    showVerticalLayoutGuide = (-5 ... 5).contains(width)
+                    showHorizontalLayoutGuide = (-5 ... 5).contains(height)
+                }
+                
+                if (-1 ... 1).contains(width) || (-1 ... 1).contains(height) {
+                    HapticManager.instance.generateImpactFeedback(style: .light)
+                }
+                
                 currentOffset = value.translation
             }
             .onEnded { value in
                 previousOffset.width += value.translation.width
                 previousOffset.height += value.translation.height
                 currentOffset = .zero
+                hideGuidelines()
             }
     }
     
@@ -85,7 +101,15 @@ struct VisualLayoutGuideView: View {
             }
             .onEnded { value in
                 previousScale = 1.0
+                hideGuidelines()
             }
+    }
+    
+    private func hideGuidelines() {
+        withAnimation {
+            showVerticalLayoutGuide = false
+            showHorizontalLayoutGuide = false
+        }
     }
 }
 
