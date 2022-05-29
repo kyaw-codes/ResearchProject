@@ -25,6 +25,11 @@ struct TabContainerView: View {
                 .tabItem {
                     TabItemView(title: "Guide", image: "cube.transparent.fill")
                 }
+            
+            PhotoEditorView()
+                .tabItem {
+                    TabItemView(title: "Photo Editor", image: "paintbrush.pointed.fill")
+                }
         }
     }
 }
