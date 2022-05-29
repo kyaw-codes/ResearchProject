@@ -13,6 +13,8 @@
 		026AEBED28412B8000262773 /* VisualLayoutGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026AEBEC28412B8000262773 /* VisualLayoutGuideView.swift */; };
 		026AEBF028412E9300262773 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026AEBEF28412E9300262773 /* HapticManager.swift */; };
 		C80B2B0A2843D4AA00C9A82A /* PhotoEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80B2B092843D4AA00C9A82A /* PhotoEditorView.swift */; };
+		C80B2B0C2843D61100C9A82A /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80B2B0B2843D61100C9A82A /* ImagePicker.swift */; };
+		C80B2B0F2843D73900C9A82A /* DrawingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80B2B0E2843D73900C9A82A /* DrawingViewModel.swift */; };
 		C8582F7628429D3D0067D6CC /* TabContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8582F7528429D3D0067D6CC /* TabContainerView.swift */; };
 		C8582F7828429D4B0067D6CC /* StaggeredGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8582F7728429D4B0067D6CC /* StaggeredGridView.swift */; };
 		C8582F7A28429D730067D6CC /* TabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8582F7928429D730067D6CC /* TabItemView.swift */; };
@@ -28,6 +30,8 @@
 		026AEBEC28412B8000262773 /* VisualLayoutGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualLayoutGuideView.swift; sourceTree = "<group>"; };
 		026AEBEF28412E9300262773 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		C80B2B092843D4AA00C9A82A /* PhotoEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEditorView.swift; sourceTree = "<group>"; };
+		C80B2B0B2843D61100C9A82A /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		C80B2B0E2843D73900C9A82A /* DrawingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewModel.swift; sourceTree = "<group>"; };
 		C8582F7528429D3D0067D6CC /* TabContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabContainerView.swift; sourceTree = "<group>"; };
 		C8582F7728429D4B0067D6CC /* StaggeredGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaggeredGridView.swift; sourceTree = "<group>"; };
 		C8582F7928429D730067D6CC /* TabItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemView.swift; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 		026AEBE928412B6200262773 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				C80B2B0D2843D72F00C9A82A /* PhotoEditor */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -131,6 +136,15 @@
 			isa = PBXGroup;
 			children = (
 				C80B2B092843D4AA00C9A82A /* PhotoEditorView.swift */,
+				C80B2B0B2843D61100C9A82A /* ImagePicker.swift */,
+			);
+			path = PhotoEditor;
+			sourceTree = "<group>";
+		};
+		C80B2B0D2843D72F00C9A82A /* PhotoEditor */ = {
+			isa = PBXGroup;
+			children = (
+				C80B2B0E2843D73900C9A82A /* DrawingViewModel.swift */,
 			);
 			path = PhotoEditor;
 			sourceTree = "<group>";
@@ -221,6 +235,8 @@
 				C8582F7A28429D730067D6CC /* TabItemView.swift in Sources */,
 				026AEBDB28412B4300262773 /* ResearchProjectApp.swift in Sources */,
 				C8582F7E2842A0AA0067D6CC /* StaggeredGridLayoutView.swift in Sources */,
+				C80B2B0F2843D73900C9A82A /* DrawingViewModel.swift in Sources */,
+				C80B2B0C2843D61100C9A82A /* ImagePicker.swift in Sources */,
 				C8582F7C2842A0800067D6CC /* StaggeredGridItem.swift in Sources */,
 				C8582F7628429D3D0067D6CC /* TabContainerView.swift in Sources */,
 			);
