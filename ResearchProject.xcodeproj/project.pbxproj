@@ -15,6 +15,8 @@
 		C8582F7628429D3D0067D6CC /* TabContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8582F7528429D3D0067D6CC /* TabContainerView.swift */; };
 		C8582F7828429D4B0067D6CC /* StaggeredGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8582F7728429D4B0067D6CC /* StaggeredGridView.swift */; };
 		C8582F7A28429D730067D6CC /* TabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8582F7928429D730067D6CC /* TabItemView.swift */; };
+		C8582F7C2842A0800067D6CC /* StaggeredGridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8582F7B2842A0800067D6CC /* StaggeredGridItem.swift */; };
+		C8582F7E2842A0AA0067D6CC /* StaggeredGridLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8582F7D2842A0AA0067D6CC /* StaggeredGridLayoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		C8582F7528429D3D0067D6CC /* TabContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabContainerView.swift; sourceTree = "<group>"; };
 		C8582F7728429D4B0067D6CC /* StaggeredGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaggeredGridView.swift; sourceTree = "<group>"; };
 		C8582F7928429D730067D6CC /* TabItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemView.swift; sourceTree = "<group>"; };
+		C8582F7B2842A0800067D6CC /* StaggeredGridItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StaggeredGridItem.swift; path = ResearchProject/Views/StaggeredGridItem.swift; sourceTree = SOURCE_ROOT; };
+		C8582F7D2842A0AA0067D6CC /* StaggeredGridLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaggeredGridLayoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		026AEBEA28412B6900262773 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C8582F7B2842A0800067D6CC /* StaggeredGridItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -123,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				C8582F7728429D4B0067D6CC /* StaggeredGridView.swift */,
+				C8582F7D2842A0AA0067D6CC /* StaggeredGridLayoutView.swift */,
 			);
 			path = StaggeredGrid;
 			sourceTree = "<group>";
@@ -202,6 +208,8 @@
 				026AEBF028412E9300262773 /* HapticManager.swift in Sources */,
 				C8582F7A28429D730067D6CC /* TabItemView.swift in Sources */,
 				026AEBDB28412B4300262773 /* ResearchProjectApp.swift in Sources */,
+				C8582F7E2842A0AA0067D6CC /* StaggeredGridLayoutView.swift in Sources */,
+				C8582F7C2842A0800067D6CC /* StaggeredGridItem.swift in Sources */,
 				C8582F7628429D3D0067D6CC /* TabContainerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
